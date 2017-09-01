@@ -1,0 +1,41 @@
+
+// Define defaults for each variable.
+
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$base-font-size:   16px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+$spacing-unit:     30px !default;
+
+$grey-color:       #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+
+$text-color:       #111 !default;
+$background-color: #eee !default;
+$front-color:      #f6f6f6 !default;
+$front-border-color: darken($grey-color-light, 5%) !default;
+$brand-color:      #0066cc !default;
+
+$header-color:      white !default;
+$header-background: #24292e !default;
+
+// Menu
+$header-menu-color:               $header-color !default;
+$header-menu-active-border-color: #6a737d !default;
+
+$footer-height:    240px !default;
+
+$post-list-item-background: $front-color !default;
+$post-list-item-border:     $front-border-color !default;
+$post-meta-color:           $grey-color !default;
+$post-category-color:       white !default;
+$post-category-background:  #808c99 !default;
+
+// Width of the content area
+$content-width:    800px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;

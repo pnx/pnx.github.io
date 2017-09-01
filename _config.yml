@@ -1,0 +1,34 @@
+title: Shuffling Pixels
+author: Henrik Hautakoski
+email: henrik.hautakoski@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  This site is about computers and stuff related to computers also maybe other
+  junk i find interesting.
+
+twitter_username: henkzmode
+github_username:  pnx
+
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input:          GFM
+  # https://github.com/jekyll/jekyll/pull/4090
+  syntax_highlighter: rouge
+  
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
