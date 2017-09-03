@@ -71,8 +71,7 @@
             text-decoration: none;
         }
         
-        // Active state
-        &:active, 
+        // Active state 
         &.active {
             border-bottom: 3px solid $header-menu-active-border-color;
         }
