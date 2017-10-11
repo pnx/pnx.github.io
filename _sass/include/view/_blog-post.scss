@@ -18,22 +18,16 @@
         display: block;
         font-size: $small-font-size;
         color: $post-meta-color;
-    }
-
-    &-categories {
-        margin-top: 5px;
-        margin-left: 0;
-        list-style: none;
-        > li {
+        
+        &-item {
             display: inline-block;
-            font-size: $small-font-size;
-            color: $post-category-color;
-            background: $post-category-background;
-            border-radius: 4px;
-            padding: .1em .6em;
+            
+            &:not(:last-child) {
+                margin-right: 1em;
+            }
         }
     }
-
+    
     &-content {
         margin-bottom: $spacing-unit;
         h2 {

@@ -13,13 +13,5 @@
             display: block;
             @include relative-font-size(1.5);
         }
-        
-        &-categories {
-            @extend .blog-post-categories;
-        }
-        
-        &-meta {
-            @extend .blog-post-meta;
-        }
     }
 }

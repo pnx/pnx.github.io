@@ -1,0 +1,13 @@
+
+.tag-list {
+    display: inline;
+    margin: 0;
+    list-style: none;
+    > li {
+        display: inline;
+
+        &:not(:last-child):after {
+            content: ", ";
+        }
+    }
+}
