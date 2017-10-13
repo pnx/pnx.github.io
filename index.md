@@ -33,6 +33,10 @@ order: 1
                 </ul>
             </div>
         </div>
+        
+        <div class="blog-post-content">
+            {{ post.excerpt }}
+        </div>
     </li>
 {% endfor %}
 </ul>
