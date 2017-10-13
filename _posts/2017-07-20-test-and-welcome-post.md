@@ -11,6 +11,8 @@ Nothing to see here just yet. Just testing out jekyll and stuff. Will post some 
 
 Anyway, ignore the other stuff on this page (but do glance at the code highlighting, I think it's sexy!)
 
+<!-- more -->
+
 ## Some great heading (h2)
 
 Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu.

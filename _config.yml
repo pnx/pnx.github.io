@@ -9,6 +9,7 @@ twitter_username: henkzmode
 github_username:  pnx
 
 permalink: /:year/:month/:day/:title/
+excerpt_separator: <!-- more -->
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
