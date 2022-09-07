@@ -23,7 +23,7 @@ kramdown:
   input:          GFM
   # https://github.com/jekyll/jekyll/pull/4090
   syntax_highlighter: rouge
-  
+
   syntax_highlighter_opts:
     span:
       line_numbers: false

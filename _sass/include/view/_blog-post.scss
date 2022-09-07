@@ -1,6 +1,6 @@
 .blog-post {
     @extend .section;
-    
+
     &-header {
         margin-bottom: $spacing-unit;
     }
@@ -13,21 +13,21 @@
             @include relative-font-size(2.25);
         }
     }
-    
+
     &-meta {
         display: block;
         font-size: $small-font-size;
         color: $post-meta-color;
-        
+
         &-item {
             display: inline-block;
-            
+
             &:not(:last-child) {
                 margin-right: 1em;
             }
         }
     }
-    
+
     &-content {
         margin-top: 1em;
         h2 {

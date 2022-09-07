@@ -2,13 +2,13 @@
 * Reset some basic elements
 */
 
-body, h1, h2, h3, h4, h5, h6, p, 
+body, h1, h2, h3, h4, h5, h6, p,
 blockquote, pre, hr, dl, dd, ol, ul, figure {
     margin: 0;
     padding: 0;
 }
 
-html, 
+html,
 body {
     margin: 0;
     padding: 0;
@@ -50,7 +50,7 @@ body {
 * Set `margin-bottom` to maintain vertical rhythm
 */
 
-h1, h2, h3, h4, h5, h6, p, blockquote, 
+h1, h2, h3, h4, h5, h6, p, blockquote,
 ul, ol, dl, figure, %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
 }
@@ -88,7 +88,7 @@ ul, ol {
 }
 
 li {
-    > ul, 
+    > ul,
     > ol {
         margin-bottom: 0;
     }
@@ -99,11 +99,11 @@ li {
 * Headings
 */
 
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
     font-weight: $base-font-weight;
 }

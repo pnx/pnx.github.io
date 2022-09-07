@@ -2,13 +2,13 @@
 .blog-list {
     margin-left: 0;
     list-style: none;
-    
+
     &-item {
         margin-bottom: $spacing-unit;
         padding: 1.5em 1em;
         background: $post-list-item-background;
         border: solid 1px $post-list-item-border;
-        
+
         &-title {
             display: block;
             @include relative-font-size(1.5);

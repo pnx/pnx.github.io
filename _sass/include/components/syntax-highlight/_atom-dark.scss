@@ -2,16 +2,16 @@
  * Syntax highlighting styles inspired by Atom's One Dark theme
  */
 .highlight {
-    
+
     color: white;
     background: #282C34;
-    
-    .lineno { 
+
+    .lineno {
         color: #4B5363;
         border-right: 1px solid #4B5363;
         padding-right: 4px;
     }
-    
+
     .c     { color: #667689; font-style: italic } // Comment
     .err   { color: #a61717; background-color: #e3d2d2 } // Error
     .k     { font-weight: bold } // Keyword
@@ -32,7 +32,7 @@
     .gs    { font-weight: bold } // Generic.Strong
     .gu    { color: #aaa } // Generic.Subheading
     .gt    { color: #a00 } // Generic.Traceback
-    .k     {color:  #ABB2BF; font-weight: normal;} 
+    .k     {color:  #ABB2BF; font-weight: normal;}
     .kc    { font-weight: bold } // Keyword.Constant
     .kd    { color: #C678DD; } // Keyword.Declaration
     .kp    { font-weight: bold } // Keyword.Pseudo
@@ -51,7 +51,7 @@
     .nn    { color: #555 } // Name.Namespace
     .nt    { color: #D86C74 } // Name.Tag
     .nv    { color: #008080 } // Name.Variable
-    .nx    { color: #D19A66;} 
+    .nx    { color: #D19A66;}
     .ow    { font-weight: bold } // Operator.Word
     .w     { color: #bbb } // Text.Whitespace
     .mf    { color: #099 } // Literal.Number.Float
