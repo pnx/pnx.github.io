@@ -38,7 +38,7 @@
 .site-title {
     @include relative-font-size(1.625);
     font-weight: 300;
-    line-height: $base-line-height * $base-font-size * 2.5;
+    line-height: $line-height * $font-size * 2.5;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
@@ -52,7 +52,7 @@
 
 .site-nav {
     float: right;
-    line-height: $base-line-height * $base-font-size * 2.5;
+    line-height: $line-height * $font-size * 2.5;
 
     .nav-trigger,
 	.menu-icon {
@@ -62,7 +62,7 @@
     &-link {
 		display: inline-block;
         color: $header-menu-color;
-        line-height: $base-line-height;
+        line-height: $line-height;
         padding: 3px 0;
 
         &:hover {

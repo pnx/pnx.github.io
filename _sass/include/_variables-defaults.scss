@@ -1,11 +1,14 @@
 
 // Define defaults for each variable.
 
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$base-font-size:   16px !default;
-$base-font-weight: 400 !default;
-$small-font-size:  $base-font-size * 0.875 !default;
-$base-line-height: 1.5 !default;
+$font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-mono: Consolas, "Courier New", monospace !default;
+
+$font-size:   16px !default;
+$font-size-small:  $font-size * 0.875 !default;
+$font-weight: 400 !default;
+$font-weight-bold: 600 !default;
+$line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 

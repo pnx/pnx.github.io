@@ -34,7 +34,7 @@ html {
  */
 
 body {
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    font: $font-weight #{$font-size}/#{$line-height} $font-sans;
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
@@ -75,7 +75,7 @@ figure > img {
 }
 
 figcaption {
-    font-size: $small-font-size;
+    font-size: $font-size-small;
 }
 
 
@@ -105,7 +105,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: $base-font-weight;
+    font-weight: $font-weight-bold;
 }
 
 
@@ -146,6 +146,11 @@ blockquote {
 /**
 * Code formatting
 */
+
+pre, code {
+    @include relative-font-size(0.9375);
+    font-family: $font-mono;
+}
 
 /*
 
