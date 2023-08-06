@@ -1,5 +1,44 @@
 
-$content-width:    1024px;
+// Define defaults for each variable.
 
-// Colors
-$brand-color:      $color-green-600;
+// Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+$font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+$font-size:   15px !default;
+$font-size-small:  $font-size * 0.875 !default;
+$font-weight: 400 !default;
+$font-weight-bold: 600 !default;
+$line-height: 1.5 !default;
+
+$spacing-unit:     30px !default;
+
+$text-color:       $color-slate-900 !default;
+$background-color: $color-slate-100 !default;
+$front-color:      $color-slate-50 !default;
+$front-border-color: $color-slate-300 !default;
+$brand-color:      $color-green-600 !default;
+
+$header-color:      $color-zink-50 !default;
+$header-background: $color-zink-800 !default;
+
+// Menu
+$header-menu-color:               $color-zink-50 !default;
+$header-menu-active-border-color: $color-slate-500 !default;
+
+$footer-height:    240px !default;
+
+$post-list-item-background: $front-color !default;
+$post-list-item-border:     $front-border-color !default;
+$post-meta-color:           $color-slate-600 !default;
+$post-category-color:       $color-slate-50 !default;
+$post-category-background:  $color-slate-600 !default;
+
+// Width of the content area
+$content-width:    1024px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
