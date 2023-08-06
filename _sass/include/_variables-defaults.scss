@@ -1,10 +1,14 @@
 
 // Define defaults for each variable.
 
-$font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-mono: Consolas, "Courier New", monospace !default;
+// Fonts
 
-$font-size:   16px !default;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+$font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+$font-size:   15px !default;
 $font-size-small:  $font-size * 0.875 !default;
 $font-weight: 400 !default;
 $font-weight-bold: 600 !default;
