@@ -1,17 +1,19 @@
 @charset "utf-8";
 
 @import
-    "include/variables/colors",
-    "include/variables",
-    "include/variables-defaults",
-    "include/mixins",
-    "include/base",
-    "include/layout",
+    "variables/colors",
+    "variables",
+    "variables-defaults",
+    "mixins",
+    "base",
+    "layout",
+
     // Components
-    "include/components/syntax-highlight",
-    "include/components/tag-list",
+    "components/syntax-highlight",
+    "components/tag-list",
+
     // Views
-    "include/view/not-found",
-    "include/view/blog-list",
-    "include/view/blog-post"
+    "view/not-found",
+    "view/blog-list",
+    "view/blog-post"
 ;
