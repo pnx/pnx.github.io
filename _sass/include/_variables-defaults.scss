@@ -16,30 +16,26 @@ $line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 
-$grey-color:       #828282 !default;
-$grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
+$text-color:       $color-slate-900 !default;
+$background-color: $color-slate-100 !default;
+$front-color:      $color-slate-50 !default;
+$front-border-color: $color-slate-300 !default;
+$brand-color:      $color-blue-700 !default;
 
-$text-color:       #111 !default;
-$background-color: #eee !default;
-$front-color:      #f6f6f6 !default;
-$front-border-color: darken($grey-color-light, 5%) !default;
-$brand-color:      #0066cc !default;
-
-$header-color:      white !default;
-$header-background: #24292e !default;
+$header-color:      $color-zink-50 !default;
+$header-background: $color-zink-800 !default;
 
 // Menu
-$header-menu-color:               $header-color !default;
-$header-menu-active-border-color: #6a737d !default;
+$header-menu-color:               $color-zink-50 !default;
+$header-menu-active-border-color: $color-slate-500 !default;
 
 $footer-height:    240px !default;
 
 $post-list-item-background: $front-color !default;
 $post-list-item-border:     $front-border-color !default;
-$post-meta-color:           $grey-color !default;
-$post-category-color:       white !default;
-$post-category-background:  #808c99 !default;
+$post-meta-color:           $color-slate-600 !default;
+$post-category-color:       $color-slate-50 !default;
+$post-category-background:  $color-slate-600 !default;
 
 // Width of the content area
 $content-width:    800px !default;

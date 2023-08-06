@@ -3,12 +3,12 @@
  */
 .highlight {
 
-    color: white;
-    background: #282C34;
+    color: $color-slate-200;
+    background: $color-slate-900;
 
     .lineno {
-        color: #4B5363;
-        border-right: 1px solid #4B5363;
+        color: $color-slate-600;
+        border-right: 1px solid $color-slate-600;
         padding-right: 4px;
     }
 

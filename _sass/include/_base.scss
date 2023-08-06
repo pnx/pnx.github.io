@@ -131,8 +131,8 @@ a {
 */
 
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
+    color: $color-slate-500;
+    border-left: 4px solid $color-slate-500;
     padding-left: $spacing-unit / 2;
     @include relative-font-size(1.125);
     letter-spacing: -1px;
@@ -184,7 +184,7 @@ pre {
     display: inline-block;
     vertical-align: middle;
     path {
-        fill: $grey-color;
+        fill: $color-slate-500;
     }
 }
 
