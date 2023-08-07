@@ -2,7 +2,7 @@
 
 import { type Post } from '../../types'
 
-import BLogPostMeta from './BLogPostMeta.vue';
+import BlogPostMeta from './BlogPostMeta.vue';
 
 defineProps<{
   post: Post
@@ -17,7 +17,7 @@ defineProps<{
         <a :href="post.url">{{ post.title }}</a>
     </h1>
 
-    <BLogPostMeta :post="post" />
+    <BlogPostMeta :post="post" />
 
     <div class="blog-post-content" v-html="post.excerpt"></div>
 </li>
