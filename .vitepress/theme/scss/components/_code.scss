@@ -1,0 +1,157 @@
+
+[class *="language-"] {
+	position: relative;
+	background-color: $code-background;
+    padding: $code-spacing 0;
+    margin-bottom: $spacing-unit;
+	border-radius: 4px;
+
+    &.line-numbers-mode {
+        padding-left: $code-gutter-width;
+
+        .line.diff::before {
+            position: absolute;
+            left: $code-gutter-width + 2px;
+        }
+    }
+
+    code {
+        display: block;
+        padding: 0 ($code-spacing / 2);
+        width: fit-content;
+        min-width: 100%;
+    }
+
+    .line {
+        line-height: $code-line-hight;
+
+        &.highlighted, &.diff {
+            display: inline-block;
+            width: calc(100% + $code-spacing);
+            margin-left: -$code-spacing / 2;
+            padding-left: ($code-spacing / 2);
+        }
+
+        &.highlighted {
+            background-color: $code-hightlight-background;
+
+            &.warning {
+                background-color: $code-hightlight-warning-background;
+            }
+
+            &.error {
+                background-color: $code-hightlight-error-background;
+            }
+        }
+
+        &.diff {
+            opacity: .7;
+            &::before {
+                position: absolute;
+                left: 2px;
+            }
+
+            &.add {
+                background-color: $code-diff-add-background;
+                &::before {
+                    color: $code-diff-add-color;
+                    content: "+";
+                }
+            }
+            &.remove {
+                background-color: $code-diff-remove-background;
+                &::before {
+                    color: $code-diff-remove-color;
+                    content: "-";
+                }
+            }
+        }
+    }
+
+    .has-focused-lines {
+
+        .line:not(.has-focus) {
+            opacity: .7;
+            filter: blur(.095rem);
+            transition: filter .35s,opacity .35s;
+        }
+
+        &:hover .line:not(.has-focus) {
+            opacity: 1;
+            filter:none;
+        }
+    }
+
+    .line-numbers-wrapper {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: $code-gutter-width;
+        padding-top: $code-spacing;
+        font-family: $font-mono;
+        line-height: $code-line-hight;
+        font-size: 14px;
+        text-align: right;
+        color: $code-linenumber-color;
+        padding-right: .4em;
+    }
+
+	> .lang {
+		position: absolute;
+		right: 6px;
+		top: 6px;
+		color: $code-lang-color;
+		font-size: .7em;
+		font-weight: bold;
+	}
+
+	> button.copy {
+		position: absolute;
+		right: 12px;
+		top: 12px;
+		width: 3em;
+		height: 3em;
+        z-index: 3;
+		border-radius: 4px;
+		opacity: 0;
+        cursor: pointer;
+        border: 1px solid $code-copy-border-color;
+        background-color: $code-copy-background;
+        background-image: url($code-copy-icon);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        transition: border-color .25s,background-color .25s,opacity .25s;
+	}
+
+    > button.copy.copied {
+        background-image: url($code-copy-copied-icon);
+        &::before {
+            position: relative;
+            top: -2px;
+            /*rtl:ignore*/
+            left: -65px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $code-copy-border-color;
+            /*rtl:ignore*/
+            border-right: 0;
+            border-radius: 4px 0 0 4px;
+            width: 64px;
+            height: 40px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: 500;
+            color: $code-copy-color;
+            background-color: $code-copy-background;
+            white-space: nowrap;
+            content: 'Copied';
+        }
+    }
+
+	&:hover > button.copy {
+		opacity: 1;
+	}
+
+}

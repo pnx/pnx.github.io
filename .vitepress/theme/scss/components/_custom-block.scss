@@ -1,0 +1,37 @@
+
+.custom-block {
+    border-radius: 4px;
+    padding: 1em;
+    margin: ($spacing-unit / 2) 0;
+    color: $customblock-color;
+    background: $customblock-background;
+    border: 1px solid $customblock-border;
+
+    &-title {
+        font-weight: $font-weight-bold;
+    }
+
+    &.info {
+        color: $customblock-info-color;
+        border-color: $customblock-info-border;
+        background-color: $customblock-info-background;
+    }
+
+    &.tip {
+        color: $customblock-tip-color;
+        border-color: $customblock-tip-border;
+        background-color: $customblock-tip-background;
+    }
+
+    &.warning {
+        color: $customblock-warning-color;
+        border-color: $customblock-warning-border;
+        background-color: $customblock-warning-background;
+    }
+
+    &.danger {
+        color: $customblock-danger-color;
+        border-color: $customblock-danger-border;
+        background-color: $customblock-danger-background;
+    }
+}

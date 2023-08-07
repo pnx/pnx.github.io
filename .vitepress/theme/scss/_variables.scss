@@ -1,0 +1,103 @@
+@import "variables/colors";
+
+// Define defaults for each variable.
+
+// Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+$font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+$font-size:   15px !default;
+$font-size-small:  $font-size * 0.875 !default;
+$font-weight: 400 !default;
+$font-weight-bold: 600 !default;
+$line-height: 1.5 !default;
+
+$spacing-unit:     30px !default;
+
+$text-color:       $color-slate-900 !default;
+$background-color: $color-slate-100 !default;
+$front-color:      $color-slate-50 !default;
+$front-border-color: $color-slate-300 !default;
+$brand-color:      $color-green-600 !default;
+
+$header-color:      $color-zink-50 !default;
+$header-background: $color-zink-800 !default;
+
+// Menu
+$header-menu-color:               $color-zink-50 !default;
+$header-menu-active-border-color: $color-slate-500 !default;
+
+$footer-height:    240px !default;
+
+$post-list-item-background: $front-color !default;
+$post-list-item-border:     $front-border-color !default;
+$post-meta-color:           $color-slate-600 !default;
+$post-category-color:       $color-slate-50 !default;
+$post-category-background:  $color-slate-600 !default;
+
+// Width of the content area
+$content-width:    1024px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+// Code
+
+$code-gutter-width: 32px;
+$code-spacing: (($spacing-unit / 4) * 3);
+$code-line-hight: 22px;
+$code-color: $color-slate-400;
+$code-background: $color-slate-800 !default;
+$code-hightlight-background: $color-slate-900 !default;
+$code-hightlight-warning-background: $color-yellow-800 !default;
+$code-hightlight-error-background: $color-red-800 !default;
+$code-diff-add-color: $color-green-400;
+$code-diff-add-background: $color-green-800;
+$code-diff-remove-color: $color-red-400;
+$code-diff-remove-background: $color-red-800;
+
+$code-copy-color: $code-color !default;
+$code-copy-background: $code-hightlight-background !default;
+$code-copy-border-color: $color-slate-700 !default;
+$code-lang-color: $code-color !default;
+
+$code-tab-color: $code-color !default;
+$code-tab-bar-color: $code-hightlight-background !default;
+$code-tab-active-bar-color: $color-slate-400 !default;
+
+$code-linenumber-color: $code-color !default;
+
+$code-copy-icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' height='20' width='20' stroke='rgba(128,128,128,1)' stroke-width='2' viewBox='0 0 24 24'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2'/%3E%3C/svg%3E";
+$code-copy-copied-icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' height='20' width='20' stroke='rgba(128,128,128,1)' stroke-width='2' viewBox='0 0 24 24'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2m-6 9 2 2 4-4'/%3E%3C/svg%3E";
+
+// Markdown
+
+$markdown-table-border: $color-slate-300 !default;
+$markdown-table-background-odd: $color-slate-200 !default;
+$markdown-table-head-color: $color-slate-900 !default;
+$markdown-table-head-background: $color-slate-200 !default;
+
+// custom block
+
+$customblock-color: $color-slate-500 !default;
+$customblock-border: $color-slate-300 !default;
+$customblock-background: $color-slate-100 !default;
+
+$customblock-info-color: $color-blue-600 !default;
+$customblock-info-border: $color-blue-300 !default;
+$customblock-info-background: $color-blue-100 !default;
+
+$customblock-tip-color: $color-green-600 !default;
+$customblock-tip-border: $color-green-300 !default;
+$customblock-tip-background: $color-green-100 !default;
+
+$customblock-warning-color: $color-yellow-600 !default;
+$customblock-warning-border: $color-yellow-300 !default;
+$customblock-warning-background: $color-yellow-100 !default;
+
+$customblock-danger-color: $color-red-600 !default;
+$customblock-danger-border: $color-red-300 !default;
+$customblock-danger-background: $color-red-100 !default;

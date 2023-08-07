@@ -1,7 +1,3 @@
-.jekyll-cache
-.bundle
-.sass-cache
-vendor
-Gemfile.lock
-_site
-*.gem
+.vitepress/cache/
+.vitepress/dist/
+node_modules/

@@ -1,0 +1,43 @@
+
+.markdown {
+
+    code {
+        color: $code-color;
+        padding: .2em .4em;
+        border-radius: 4px;
+        background-color: $code-background;
+    }
+
+    table {
+        display: block;
+        border-collapse: collapse;
+        margin: 20px 0;
+        overflow-x: auto;
+    }
+
+    tr {
+        border-top: 1px solid $markdown-table-border;
+        transition: background-color 0.5s;
+
+        &:nth-child(2n) {
+            background-color: $markdown-table-background-odd;
+        }
+    }
+
+    th, td {
+        border: 1px solid $markdown-table-border;
+        padding: 8px 16px;
+    }
+
+    th {
+        text-align: left;
+        font-size: 14px;
+        font-weight: 600;
+        color: $markdown-table-head-color;
+        background-color: $markdown-table-head-background;
+    }
+
+    td {
+        font-size: 14px;
+    }
+}

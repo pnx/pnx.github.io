@@ -1,0 +1,57 @@
+
+.vp-code-group {
+    margin: $spacing-unit 0;
+
+    .tabs {
+        border-radius: 4px 4px 0 0;
+        display: flex;
+        padding: 0 12px;
+        background-color: $code-background;
+        overflow-x: auto;
+        overflow-y: hidden;
+        box-shadow: inset 0 -1px $code-tab-bar-color;
+
+        > label {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px solid transparent;
+            padding: 0 12px;
+            line-height: 48px;
+            font-size: 14px;
+            color: $code-tab-color;
+            white-space: nowrap;
+            cursor: pointer;
+            transition: color 0.25s;
+
+            &::after {
+                position: absolute;
+                right: 8px;
+                bottom: -1px;
+                left: 8px;
+                z-index: 1;
+                height: 1px;
+                content: '';
+                background-color: transparent;
+                transition: background-color 0.25s;
+            }
+        }
+
+        input:checked + label::after {
+            background-color: $code-tab-active-bar-color;
+        }
+
+        > input {
+            display: none;
+        }
+    }
+
+    .blocks > .active {
+        display: block;
+    }
+
+    div[class*='language-'] {
+        display: none;
+        border-top-left-radius: 0 !important;
+        border-top-right-radius: 0 !important;
+    }
+}
