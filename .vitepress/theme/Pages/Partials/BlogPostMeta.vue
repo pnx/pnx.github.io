@@ -14,7 +14,7 @@ defineProps<{
 <template>
 <div class="blog-post-meta">
     <div class="blog-post-meta-item">
-        <span class="icon"><TimeIcon /></span>
+        <span class="icon"><font-awesome-icon icon="fa-regular fa-clock" /></span>
         <time v-if="post.date" datetime="" itemprop="datePublished">
             {{ formatDate(post.date) }}
         </time>
@@ -24,7 +24,7 @@ defineProps<{
     </div>
 
     <div v-if="post.tags && post.tags.length > 0" class="blog-post-meta-item">
-        <span class="icon"><PriceTagsIcon /></span>
+        <span class="icon"><font-awesome-icon icon="fa-solid fa-tags" rotation="90" /></span>
         <ul class="tag-list">
             <li v-for="tag in post.tags" v-bind:key="tag">{{ tag }}</li>
         </ul>
