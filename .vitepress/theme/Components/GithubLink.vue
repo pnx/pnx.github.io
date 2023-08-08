@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import GithubIcon from './Icons/GithubIcon.vue';
 const props = defineProps<{
   username: string
 }>();
@@ -7,7 +6,7 @@ const props = defineProps<{
 
 <template>
     <a target="_blank" :href="'https://github.com/' + props.username">
-        <span class="icon icon--github"><GithubIcon /></span>
+        <span class="icon"><font-awesome-icon icon="fa-brands fa-github" size="lg" /></span>
         <span class="username">{{ props.username }}</span>
     </a>
 </template>
