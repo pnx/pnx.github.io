@@ -1,13 +1,19 @@
 {
   "devDependencies": {
+    "moment": "^2.29.4",
     "sass": "^1.64.2",
     "vitepress": "^1.0.0-beta.7",
-    "vue": "^3.3.4",
-    "moment": "^2.29.4"
+    "volar-service-vetur": "latest",
+    "vue": "^3.3.4"
   },
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/vue-fontawesome": "^3.0.3"
   }
 }
