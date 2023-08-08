@@ -4,12 +4,13 @@ import { useData } from 'vitepress'
 import Header from './Header.vue';
 import Footer from './Footer.vue';
 
+import NotFound from './Pages/NotFound.vue';
 import BlogIndex from './Pages/BlogIndex.vue';
 import BlogPost from './Pages/BlogPost.vue';
 import DefaultPage from './Pages/DefaultPage.vue';
 
 // https://vitepress.dev/reference/runtime-api#usedata
-const { frontmatter } = useData()
+const { page, frontmatter } = useData()
 </script>
 
 <template>
@@ -17,7 +18,8 @@ const { frontmatter } = useData()
 
     <main class="page-content" aria-label="Content">
         <div class="container">
-            <BlogIndex v-if="frontmatter.layout == 'blog-index'" />
+            <NotFound v-if="page.isNotFound" />
+            <BlogIndex v-else-if="frontmatter.layout == 'blog-index'" />
             <BlogPost v-else-if="frontmatter.layout == 'blog-post'" />
             <DefaultPage v-else />
         </div>
