@@ -140,7 +140,6 @@ blockquote {
     color: $color-slate-500;
     border-left: 4px solid $color-slate-500;
     padding-left: $spacing-unit / 2;
-    @include relative-font-size(1.125);
     letter-spacing: -1px;
     font-style: italic;
     > :last-child {
@@ -154,7 +153,6 @@ blockquote {
 */
 
 pre, code {
-    @include relative-font-size(0.9375);
     font-family: $font-mono;
 }
 
