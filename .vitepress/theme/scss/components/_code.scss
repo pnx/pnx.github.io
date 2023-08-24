@@ -154,4 +154,23 @@
 		opacity: 1;
 	}
 
+    // Named file plugin.
+
+    .named-fence-block {
+        position: relative;
+        padding-top: 2em;
+    }
+
+    .named-fence-filename {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: .9em;
+		font-weight: bold;
+        padding: 0 6px;
+        border-radius: 4px 0 4px 0;
+        color: $code-filename-color;
+        background: $code-filename-background;
+    }
+
 }
