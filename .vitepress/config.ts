@@ -1,3 +1,4 @@
+import mdNamedCode from 'markdown-it-named-code-blocks';
 import { defineConfigWithTheme } from 'vitepress'
 import { type ThemeConfig } from './theme/types'
 
@@ -20,5 +21,8 @@ export default defineConfigWithTheme<ThemeConfig>({
   },
   markdown: {
     lineNumbers: true,
+    config(md) {
+        md.use(mdNamedCode);
+    },
   }
 })
