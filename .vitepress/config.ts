@@ -8,6 +8,23 @@ export default defineConfigWithTheme<ThemeConfig>({
   description: "This site is about computers and stuff related to computers also maybe other junk i find interesting.",
   cleanUrls: true,
   srcDir: "src",
+  head: [
+    [
+      'script',
+      {
+        async: true,
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-GTZ95TG0ES',
+      },
+    ],
+    [
+      'script',
+      {},
+      "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-GTZ95TG0ES');",
+    ],
+  ],
+  rewrites: {
+    'posts/:date/:name/(.*)': 'posts/:date-:name.md',
+  },
   themeConfig: {
     Blog : {
         postsPath: "src/posts",
