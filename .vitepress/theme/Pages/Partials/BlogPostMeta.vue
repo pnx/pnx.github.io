@@ -3,9 +3,6 @@
 import { type Post } from '../../types'
 import { formatDate } from '../../Support/blog'
 
-import TimeIcon from '../../Components/Icons/TimeIcon.vue';
-import PriceTagsIcon from '../../Components/Icons/PriceTagsIcon.vue';
-
 defineProps<{
   post: Post
 }>();
