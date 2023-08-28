@@ -36,12 +36,6 @@ $header-menu-active-border-color: $color-slate-500 !default;
 
 $footer-height:    240px !default;
 
-$post-list-item-background: $front-color !default;
-$post-list-item-border:     $front-border-color !default;
-$post-meta-color:           $color-slate-600 !default;
-$post-category-color:       $color-slate-50 !default;
-$post-category-background:  $color-slate-600 !default;
-
 // Width of the content area
 $content-width:    1024px !default;
 
@@ -108,3 +102,11 @@ $customblock-warning-background: $color-yellow-100 !default;
 $customblock-danger-color: $color-red-600 !default;
 $customblock-danger-border: $color-red-300 !default;
 $customblock-danger-background: $color-red-100 !default;
+
+// Post
+
+$post-list-item-background: $front-color !default;
+$post-list-item-border:     $front-border-color !default;
+$post-meta-color:           $color-slate-600 !default;
+$post-category-color:       $color-slate-50 !default;
+$post-category-background:  $color-slate-600 !default;
