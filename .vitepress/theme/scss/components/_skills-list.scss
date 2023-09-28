@@ -1,0 +1,32 @@
+
+.skill-list {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    justify-items: center;
+    margin-bottom: 2em;
+
+    row-gap: 1em;
+    gap: 1em;
+
+    @include media-query($on-laptop) {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    @include media-query($on-palm) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    &-item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 4px;
+        padding: 1em 2em;
+        background-color: $skill-item-background;
+
+        > span {
+            margin-top: 1em;
+        }
+    }
+}
