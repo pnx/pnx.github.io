@@ -13,10 +13,6 @@ export type ThemeConfig = {
         Github ?: string
         Twitter ?: string
     }
-
-    //socialLinks: [
-    //    { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    //]
 }
 
 export type Post = {
