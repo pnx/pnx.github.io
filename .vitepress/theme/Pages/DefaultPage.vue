@@ -4,13 +4,13 @@ const { page } = useData()
 </script>
 
 <template>
-<article class="post section">
+<article class="section">
 
-    <header v-if="page.title" class="post-header">
-        <h1 class="post-title">{{ page.title }}</h1>
+    <header v-if="page.title" class="page-heading">
+        <h1>{{ page.title }}</h1>
     </header>
 
-    <div class="post-content markdown">
+    <div class="markdown">
         <Content />
     </div>
 
