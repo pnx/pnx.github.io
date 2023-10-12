@@ -23,7 +23,7 @@ export default defineConfigWithTheme<ThemeConfig>({
     ],
   ],
   rewrites: {
-    'posts/:date/:name/(.*)': 'posts/:date-:name.md',
+    // 'posts/:date/:name/(.*)': 'posts/:date-:name.md',
   },
   themeConfig: {
     Blog : {
