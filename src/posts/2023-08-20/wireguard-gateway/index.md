@@ -13,15 +13,7 @@ peers in the network can talk to each other without invdividually having to be p
 
 <!-- more -->
 
-# A typical WireGuard network (fully connected topology)
-
 ## A typical WireGuard network (fully connected topology)
-
-### A typical WireGuard network (fully connected topology)
-
-#### A typical WireGuard network (fully connected topology)
-
-> Block Quote
 
 ![Full network](./full.png)
 
