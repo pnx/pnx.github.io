@@ -1,17 +1,60 @@
 ---
 title: About
-permalink: about/
-order: 2
 ---
 
-Not much here yet. Should probely write some interesting things about myself..<br/>
-Anyway, one thing i can tell you is that Iam a huge nerd when it comes to things most normal people find pretty useless to know about.
+<ProfilePicture img="img/profile.jpg" />
 
-Like that a day on mars has more or less hours from earth so NASA has to have to clocks, one for earth and one for mars time.
-People must also work nights sometimes because of this "drift" as it might be daylight on mars and night on earth.
-It's not like timezones wich are consistent. Each morning on mars will be lets say for example 1 hour later on earth each day
-(this is just a example, i don't know the actual times).
+Hello, My name is Henrik
 
-And also the fact that if you land at a airport but do not go through passport control, You are not *actually* in that country.
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
-<a target="_blank" href="https://www.google.com/search?q=i%27m+feeling+curious">Google has a cool page for this sort of cool stuff.</a>
+## Skills
+
+A list of things i know (some more than others)
+
+<div class="skill-list">
+    <Skill name="php" label="PHP" />
+    <Skill name="laravel" label="Laravel" />
+    <Skill name="redis" label="Redis" />
+    <Skill name="mysql" label="MySQL" />
+    <Skill name="css3" label="CSS" />
+    <Skill name="sass" label="SASS" />
+    <Skill name="less" label="LESS" />
+    <Skill name="vuejs" label="VueJS" />
+    <Skill name="html5" label="HTML" />
+    <Skill name="golang" label="Go" />
+    <Skill name="cpp" label="C++" />
+    <Skill name="git" label="Git" />
+</div>
+
+## Projects
+
+* [kodex-vscode](https://github.com/pnx/kodex-vscode) - Personal Theme i use in Visual Studio Code
+* [wgconfig-go](https://github.com/pnx/wgconfig-go) - go module that can manipulate [Wireguard](https://www.wireguard.com) config files.
+
+### Laravel
+
+Some libraries i have written for laravel.
+
+* [laravel-ignite](https://github.com/pnx/laravel-ignite)
+* [laravel-ignite-date](https://github.com/pnx/laravel-ignite-date)
+* [laravel-ignite-dropdown](https://github.com/pnx/laravel-ignite-dropdown)
+* [laravel-bitcoin-validation](https://github.com/pnx/laravel-bitcoin-validation) - Validate bitcoin addresses in forms.
+* [blade-cryptocurrency-icons](https://github.com/pnx/blade-cryptocurrency-icons) - Package for providing crypto currency icons for [blade-icons](https://github.com/blade-ui-kit/blade-icons)
+
+### Projects i have built as part of [Sw/eden](https://waxsweden.org)
+* [antelope-api-healthcheck](https://github.com/eosswedenorg/antelope-api-healthcheck)
+* [antelope-keygen](https://github.com/eosswedenorg/antelope-keygen)
+* [antelope-ship-client](https://github.com/eosswedenorg-go/antelope-ship-client)
+* [atomicasset](https://github.com/eosswedenorg-go/atomicasset)
+* [libantelope](https://github.com/eosswedenorg/libantelope)
+* [leap-api](https://github.com/eosswedenorg-go/leapapi)
