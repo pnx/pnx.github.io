@@ -13,9 +13,17 @@ peers in the network can talk to each other without invdividually having to be p
 
 <!-- more -->
 
+# A typical WireGuard network (fully connected topology)
+
 ## A typical WireGuard network (fully connected topology)
 
-![Full network](./2023-08-20-wireguard-gateway/full.png)
+### A typical WireGuard network (fully connected topology)
+
+#### A typical WireGuard network (fully connected topology)
+
+> Block Quote
+
+![Full network](./full.png)
 
 A typical WireGuard network is shown in the diagram above.
 Blue lines are physical LAN links between the router and nodes
@@ -32,7 +40,7 @@ Lets see if we can configure WireGuard in a star topology.
 
 ## Star topology
 
-![Star network](./2023-08-20-wireguard-gateway/wg.png)
+![Star network](./wg.png)
 
 This type of network topology is quite common, in fact this is how you would set up a network using a router or switch (notice how each WireGuard link has exaclty one physical link aswell).
 The question is, could we also configure WireGuard as a star network? That way, nodes need only to be peered with a central node (likley a router). That node in return is peered with every other node.
@@ -162,7 +170,7 @@ Now with this setup. from A we can reach B via `10.0.0.3` without directly being
 
 Now just because. lets introduce a external node to the network (maybe your laptop when you are out and about).
 
-![WireGuard Star With External Node](./2023-08-20-wireguard-gateway/wg2.png)
+![WireGuard Star With External Node](./wg2.png)
 
 ::: info IMPORTANT
 Make sure you configure your firewall to accept port `443 udp` from WAN. Otherwise C will not be able to peer with the router.
