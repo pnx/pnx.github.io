@@ -1,6 +1,7 @@
 import moment from 'moment';
-import { useData } from 'vitepress';
-import type { ThemeConfig, Post } from '../types';
+// import { useData } from 'vitepress';
+// import type { ThemeConfig, Post } from '../types';
+import type { Post } from '../types';
 
 const parseDateFromUrl = (url:string) => {
     var match = url.match('\/[0-9]+\-[0-9]+\-[0-9]+\/');
@@ -11,8 +12,9 @@ const parseDateFromUrl = (url:string) => {
 };
 
 const formatDate = (date: moment.Moment | string) => {
-    const { theme } = useData<ThemeConfig>()
-    const fmt = theme.value.Blog?.dateFormat ?? 'MMM D, Y';
+    //const { theme } = useData<ThemeConfig>()
+    //const fmt = theme.value.Blog?.dateFormat ?? 'MMM D, Y';
+    const fmt = 'MMM D, Y';
 
     if (typeof(date) === "string") {
         date = moment(date);
