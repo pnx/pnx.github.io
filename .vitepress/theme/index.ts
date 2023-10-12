@@ -4,6 +4,8 @@ import "./icons.ts"
 // https://vitepress.dev/guide/custom-theme
 import { EnhanceAppContext } from "vitepress"
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import Skill from './Components/Skill.vue';
+
 import ProfilePicture from './Components/ProfilePicture.vue';
 import Layout from './Layout.vue'
 import './scss/style.scss'
@@ -13,6 +15,7 @@ export default {
     enhanceApp(ctx: EnhanceAppContext) {
         ctx.app.component('font-awesome-icon', FontAwesomeIcon)
         ctx.app.component('ProfilePicture', ProfilePicture)
+        ctx.app.component('Skill', Skill)
     }
 }
 
