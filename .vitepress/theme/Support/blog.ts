@@ -3,7 +3,7 @@ import { useData } from 'vitepress';
 import type { ThemeConfig, Post } from '../types';
 
 const parseDateFromUrl = (url:string) => {
-    var match = url.match('[0-9]+\-[0-9]+\-[0-9]+');
+    var match = url.match('\/[0-9]+\-[0-9]+\-[0-9]+\/');
     if (match !== null && match.length > 0) {
         return moment(match[0]);
     }
