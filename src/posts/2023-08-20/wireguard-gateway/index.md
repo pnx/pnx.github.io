@@ -58,7 +58,7 @@ If the Address is set to `10.0.0.1/24` on the other hand. WireGuard will set up 
 
 #### AllowedIPs
 
-Now, it is not enough to configure what addresses should be routed through the interface. WireGuard also looks in the Peer's `allwedIPs` field to know what **outbound** packages with **destination** ip are allowed through the interface aswell as what **inbound** packages with **source ip** are allowed to go through. If the address is not in the range, WireGuard drops it.
+Now, it is not enough to configure what addresses should be routed through the interface. WireGuard also looks in the Peer's `allowedIPs` field to know what **outbound** packages with **destination** ip are allowed through the interface aswell as what **inbound** packages with **source ip** are allowed to go through. If the address is not in the range, WireGuard drops it.
 
 Lets see with an example, consider the following config:
 
