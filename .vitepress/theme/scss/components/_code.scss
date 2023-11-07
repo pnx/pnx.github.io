@@ -89,9 +89,7 @@
         left: 0;
         width: $code-gutter-width;
         padding-top: $code-spacing;
-        font-family: $font-mono;
-        line-height: $code-line-hight;
-        font-size: 14px;
+        font: $code-font;
         text-align: right;
         color: $code-linenumber-color;
         padding-right: .4em;
