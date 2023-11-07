@@ -45,9 +45,10 @@ $on-laptop:        800px !default;
 // Code
 
 $code-font-size: $font-size;
+$code-line-hight: 22px;
+$code-font: $font-weight #{$code-font-size}/#{$code-line-hight} $font-mono !default;
 $code-gutter-width: 32px;
 $code-spacing: (($spacing-unit / 4) * 3);
-$code-line-hight: 22px;
 $code-color: $color-slate-400;
 $code-background: $color-slate-800 !default;
 $code-hightlight-background: $color-slate-900 !default;
