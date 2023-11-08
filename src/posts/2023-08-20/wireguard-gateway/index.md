@@ -47,7 +47,7 @@ The `Address` field tells WireGuard two things:
 
 1. What IP should be associated with the interface.
 
-2. The network block that tells the host what other IP Addresses are **routeable** through the interface. If `/24` prefix is used.
+2. The network block that tells the host what other IP Addresses are **routeable** through the interface.
 
 Lets make this more clear with an example, Lets say that the Address is `10.0.0.1/32`
 
