@@ -5,10 +5,10 @@ import type { Post } from '../types';
 
 const parseDateFromUrl = (url:string) => {
     var match = url.match('\/[0-9]+\-[0-9]+\-[0-9]+\/');
-    if (match !== null && match.length > 0) {
-        return moment(match[0]);
-    }
-    return undefined;
+    var value =match !== null && match.length > 0
+        ? match[0]
+        : "1970-01-01"
+    return moment(value, "YYYY-MM-DD");
 };
 
 const formatDate = (date: moment.Moment | string) => {
