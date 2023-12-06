@@ -14,7 +14,7 @@ export default createContentLoader(pattern, {
         return raw
             .filter((raw) => raw.frontmatter.layout == 'blog-post')
             .map(convertPost)
-            .sort((a, b) => b.date - a.date)
+            .sort((a: Post, b: Post) => b.date.diff(a.date))
     },
 });
 
