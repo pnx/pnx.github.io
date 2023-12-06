@@ -19,7 +19,7 @@ export type Post = {
     title: string
     author: string
     url: string
-    date ?: Moment | string
+    date : Moment
     tags ?: string[]
     excerpt ?: string
 }
