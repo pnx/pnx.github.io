@@ -7,7 +7,7 @@
     "markdown-it-named-code-blocks": "^0.2.0",
     "moment": "^2.29.4",
     "sass": "^1.64.2",
-    "vitepress": "^1.0.0-beta.7",
+    "vitepress": "^1.0.0-rc.39",
     "volar-service-vetur": "latest",
     "vue": "^3.3.4"
   },

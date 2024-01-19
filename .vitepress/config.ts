@@ -1,10 +1,8 @@
 import mdNamedCode from 'markdown-it-named-code-blocks';
 import { defineConfigWithTheme } from 'vitepress'
 import { type ThemeConfig } from './theme/types'
-import shiki from 'shiki'
 import path from 'node:path'
-
-const theme = await shiki.loadTheme(path.dirname(__filename) + '/arctic.json')
+import fs from 'node:fs'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfigWithTheme<ThemeConfig>({
@@ -41,7 +39,7 @@ export default defineConfigWithTheme<ThemeConfig>({
     }
   },
   markdown: {
-    theme: theme,
+    theme: JSON.parse(fs.readFileSync(path.dirname(__filename) + '/arctic.json').toString()),
     lineNumbers: true,
     config(md) {
         md.use(mdNamedCode);
